@@ -1,0 +1,529 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tourisem of Bangalore</title>
+    <style>
+        *
+        {
+            margin: 0px;
+        }
+         .header
+         {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(245, 245, 245);
+            box-shadow: 2px 2px 13px rgb(131, 129, 129);
+            position: sticky;
+            top: 0px;
+         }
+         .logo
+         {
+            margin-left: 20px;
+         }
+         .header-links a
+         {
+            text-decoration: none;
+            color: rgba(15, 13, 13, 0.747);
+            margin-left: 12px;
+         }
+         .header-links a:hover
+         {
+            height: 150px;
+            width: 70px;
+            background-color: chocolate;
+            transition: 2s;
+         }
+         .quote-btn
+         {
+            /* background-color: rgb(61, 202, 61); */
+            /* margin-right: 20px; */
+         }
+
+         .quote-btn button
+         {
+            height: 50px;
+            width: 120px;
+            background-color: rgb(58, 202, 58);
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+         }
+         .img-section
+         {
+            width: 100%;
+         }
+         .img-section img
+         {
+            width: 100%;
+         }
+
+         .links-section
+         {
+            height: 100px;
+            background-color: rgba(241, 239, 239, 0.925);
+            padding-left: 130px;
+            width: 1220px;
+            
+         }
+         .links-section a
+         {
+            margin-left: 18px;
+            text-decoration: none;
+            color: rgb(31, 28, 28);
+            font-size: 17px;
+
+
+         }
+         .links-section h1
+         {
+            margin-left: -30px;
+            margin-top:25px;
+            color: rgba(0, 0, 0, 0.795);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+         }
+
+         .text-section
+         {
+            margin: 0px 0px;
+            padding: 10px 100px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+         .text-section h3
+         {
+            color: rgba(17, 13, 13, 0.815);
+         }
+         .text-section p
+         {
+            color: rgba(36, 33, 33, 0.63);
+            margin-top: 10px;
+         }
+         .package{
+            background-color:rgba(231, 228, 228, 0.747);
+            padding-top: 30px;
+            height: fit-content;
+            padding-bottom: 30px;
+            box-shadow: 2px 2px 33px rgb(155, 150, 150);
+         }
+
+         .package-img
+         {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            
+         }
+         .package h1
+         {
+            margin-left: 400px;
+            color: rgba(0, 0, 0, 0.658);
+         }
+         
+
+         .package-img img
+         {
+            margin-left: 30px;
+         }
+
+         .package-btn button
+         {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(45, 197, 45);
+            color: white;
+            border: none;
+            border-radius: 29px;
+            margin-left: 580px;
+            margin-top: 30px;
+            font-size: large;
+         }
+
+         .things
+         {
+            background-color:rgba(231, 228, 228, 0.747);
+            padding-top: 30px;
+            height: fit-content;
+            padding-bottom: 30px;
+            box-shadow: 2px 2px 33px rgb(155, 150, 150);
+            padding-bottom: 50px;
+         }
+
+         .things-img
+         {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+         }
+
+         .things-img img
+         {  
+            width: 18%;
+            margin-left: 30px;
+         }
+         .things h1
+         {
+            margin-left: 400px;
+            color: rgba(0, 0, 0, 0.658);
+         }
+         .destinations
+         {
+            background-color:rgba(231, 228, 228, 0.747);
+            padding-top: 30px;
+            height: fit-content;
+            padding-bottom: 30px;
+            box-shadow: 2px 5px 33px rgb(155, 150, 150);
+            padding-bottom: 50px;
+         }
+
+         .destin-img1,.destin-img2
+         {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+         }
+
+         .destin-img1 img
+         {
+            width: 18%;
+            margin-left: 30px;
+         }
+         .destin-img2 img
+         {
+            width: 18%;
+            margin-left: 30px;
+         }
+        .destinations h1
+        {
+            margin-left: 400px;
+            color: rgba(0, 0, 0, 0.658);
+        }
+
+        .destin-btn button
+        {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(45, 197, 45);
+            color: white;
+            border: none;
+            border-radius: 29px;
+            margin-left: 590px;
+            margin-top: 30px;
+            font-size: large;
+        }
+
+        .destin-after button
+        {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(45, 197, 45);
+            color: white;
+            border: none;
+            border-radius: 29px;
+            margin-left: 590px;
+            margin-top: 10px;
+            font-size: large;
+        }
+
+        .update
+        {
+            background-image: url(https://toim.b-cdn.net/images/tour-package/subscribe-bg.jpg);
+            /* background-color: rgba(0, 0, 0, 0.185); */
+            height: 200px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            color: white;
+            /* justify-content: space-between; */
+        }
+        .update-text
+        {
+            margin-left: 150px;
+            color: rgb(235, 188, 17);
+        }
+        .update-search 
+        {
+            margin-left: 60px;
+        }
+        .update-search input
+        {
+            height: 40px;
+            width: 300px;
+            border-radius: 40px;
+            border: none;
+            background-color: rgb(248, 247, 247);
+
+        }
+    .update-search button
+    {
+        height: 40px;
+        width: 150px;
+        border-radius: 40px;
+        border: none;
+        margin-left: -40px;
+        background-color: rgb(211, 51, 11);
+        margin-right: 120px;
+
+    }
+    .menubar ul
+    {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: rgba(189, 184, 184, 0.582);
+    }
+    .menubar li
+    {
+        margin-left: 10px;
+        font-size: 18px;
+        color:rgba(5, 5, 5, 0.829);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .last-footer
+    {
+        background-color: rgb(26, 39, 32);
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        align-content: space-between;
+        
+    }
+    .content1
+    {
+        margin-left:50px;
+        margin-right: 30px;
+    }
+    .content2
+    {
+        margin-right: 20px;  
+    }
+    .content2 h1
+    {
+        color: orange;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    .content2 p
+    {
+        margin-top: 10px;
+        font-size: medium;
+    }
+    .content3
+    {
+        margin-right: 20px; 
+    }
+    .content4
+    {
+        margin-right: 20px; 
+    }
+    .last-line
+    {
+        height: 40px;
+        background-color: black;
+        color: whitesmoke;
+        position: sticky;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .fixed button
+    {
+        width: 130px;
+        height: 50px;
+        border: 1px solid orangered;
+        border-radius: 12px;
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://toim.b-cdn.net/images/logo.png?405x50" alt="">
+        </div>
+        <div class="header-links">
+            <a href="">Home</a>
+            <a href="">Packages</a>
+            <a href="">International</a>
+            <a href="">Destination</a>
+            <a href="">Offers</a>
+            <a href="">Experiences</a>
+            <a href="">travel by Month</a>
+            <a href="">Best Time To Visit</a>
+            <a href="">New</a>
+        </div>
+        <div class="quote-btn">
+            <button>Get Quote</button>
+        </div>
+    </div>
+    <div class="img-section">
+        <img src="https://toim.b-cdn.net/pictures/travel_guide/bangalore-684.jpeg" alt="">
+    </div>
+
+    <div class="links-section">
+        <a href="">Home</a>
+        <a href="">Destinations</a>
+        <a href="">Karnataka</a>
+        <a href="">Bangalore</a>
+
+        <div class="fixed">
+             <button>May I help you?</button>
+        </div>
+        <h1>Tourism in Bangalore</h1>
+    </div>
+    <div class="text-section">
+        <p>Bangalore is the capital city of the southern Indian state of Karnataka. It is the seventh largest city in India. It is also known as the Garden City because of its many beautiful gardens and parks. The nandi hills in Bangalore is not to be missed by the pious. Though the origin of Bangalore is ancient, the present-day city was founded in the 16th century and has since continued to be an important administrative center. Because of the high concentration of IT industry, it also called the Silicon Valley of India. There are a number of good hotels in Bangalore like the Ashoka Hotel in Bangalore that make your stay in the Garden city comfortable.<span><a href="">Read More</a></span></p>
+        <br><br><br>
+
+        <h3>Fairs & Festivals of Bangalore</h3>
+        <p>Groundnut Festival or Kadalekai Parishe in November, Ugadi or the Kannada New Year in March or April, Makar Sankranti in January, and Ganesh Chaturthi in August or September are some of the famous festivals to attend in Bangalore. It will give you a deep insight into Bangalore’s culture.</p>
+
+
+        <br><br><br>
+        <h3>Best Time to Visit Bangalore</h3>
+        <p>Bangalore, the IT Hub of India is a city one can visit anytime of the year. The city enjoys a moderate temperate all throughout the year. The months between September and February see the highest tourist inflow. The summers are pleasant in Bangalore. When the country is exhausted by heat, the temperature of the city never crosses 35 degree Celsius. Rains are also blissful but it’s better to avoid the monsoon season. The weather becomes the most pleasant during the winter season. The temperatures are soothing but not dipping than 10 degrees. Carry light woolens for comfort. The cold season is the best time to plan a visit as the city also hosts numerous music festivals.<span><a href="">Read More</a></span>.</p>
+        <br><br><br>
+
+        <h3>How to Reach Bangalore</h3>
+        <p>BY AIR - Bangalore is accessible by air, road, and rail. Bangalore Airport is 13 km east of the City Station. There are number of daily flights to important cities like Calcutta, Mumbai, Delhi, Hyderabad, Chennai, Ahmedabad, Goa, Kochi, Mangalore, Pune and Thiruvananthapuram. Bangalore has direct international flights to Muscat, Sharjah and Singapore. It is also a stopover for many international flights.</p>
+
+        <p>BY ROAD - Bangalore has a large bus terminus, which is near the railway station. There are two railway stations in Bangalore. The main station is well connected to all major Indian cities. There are number of daily express trains from Bangalore to other cities of India.<span><a href="">Read More</a></span></p>
+
+        <br><br><br>
+
+        <h3>Tourist Attractions in Bangalore</h3>
+        <p>Bangalore city has a number of tourist places. Apart from the numerous gardens, it also has some historical sites and other places of interest. The Vidhan Soudha or the State Secretariat, built in 1954, is the main attraction of this city. It is a marvel of modern architecture and is a fine amalgamation of traditional Dravidian and modern styles. Cubbon Park, the 120-hectare park located near the Vidhan Soudha, has a number of neo-classical styled government buildings. The Government Museum of Bangalore (one of India's oldest museums) and the Visvesvaraya Technological and Industrial Museum are important museums within the city. The Lal Bagh Botanical Gardens, which holds a number of flower shows, especially during the Republic Day (26th January), is located on the southern fringes of the city. The 18th-century Tipu Sultan's Fort and Palace are other important places of interest to the traveler. The 16th-century, Dravidian-styled temple dedicated to Nandi hills in Bangalore is an important place of worship. For all those religious visitors the nandi hills in Bangalore is not to be missed. The Venkataramanaswamy Temple, the Gavi Gangadhareswara cave temple, and the Someshwara Temple are other important temple of this city. The Ulsoor Lake on the northeastern edge of the city is an important picnic spot. Bangalore city is famous for it's numerous Yoga centers, where fitness freaks can learn and practice this ancient art of keeping healthy. Most of the good hotels in Bangalore are located close to the tourist spots like the Ashoka hotel Bangalore.<span><a href="">Read More</a></span></p>
+    </div> <br><br>
+    <div class="package">
+        <h1>Recommended Bangalore Tour Packages </h1>
+
+        <div class="package-img">
+            <img src="https://toim.b-cdn.net/pictures/tourintro/wayanad-kabini-from-bangalore-1094.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/tourintro/mysore-goa-tour-946.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/tourintro/bangalore-mysore-ooty-tour-803.jpeg" alt="">
+        </div>
+         <div class="package-btn">
+            <button>View all packages</button>
+         </div>
+    </div>
+    <br><br>
+
+    <div class="things">
+        <h1>Sightseeing & Things To Do in Bangalore</h1>
+        <div class="things-img">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/attractions/thmb/bangalore-palace-319.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/attractions/thmb/nandi-hills-bangalore-368.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/attractions/thmb/soukya-holistic-health-center-400.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/attractions/thmb/sai-baba-ashram-bangalore-612.jpeg" alt="">
+        </div>
+    </div>
+    <br><br>
+
+    <div class="destinations">
+        <h1>More Tourist Destinations in Karnataka</h1>
+
+        <div class="destin-img1">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/hampi-691.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/mysore-697.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/mangalore-607.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/aihole-605.jpeg" alt="">
+        </div>
+        <div class="destin-img2">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/gulbarga-606.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/srirangapatnam-610.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/shravanabelagola-tour-832.jpeg" alt="">
+            <img src="https://toim.b-cdn.net/pictures/travel_guide/thmb/badami-681.jpeg" alt="">
+        </div>
+        <div class="destin-btn">
+            <button>Load More</button>
+        </div>
+    </div>
+    <br>
+    <div class="destin-after">
+        <button>Yes, Plan my Trip</button>
+    </div>
+    <br> <br>
+    <footer>
+        <div class="update">
+            <div class="update-text">
+                <h1>Get Updates & More</h1>
+                <p>Subscribe Our Newsletter for get latest updates</p>
+            </div>
+            <div class="update-search">
+                <input type="search" placeholder="Enter Your Email Address">
+                <button>Subscribe Now</button>
+            </div>
+            <div class="update-scicon">
+                <h2>Follow</h2>
+            </div>
+        </div>
+        <div class="menubar">
+            <ul>
+                <li>About Us</li>
+                <li>|</li>
+                <li>Terms & Conditions</li>
+                <li>|</li>
+                <li>Good to know</li>
+                <li>|</li>
+                <li>Special Offers</li>
+                <li>|</li>
+                <li>Contact Us</li>
+                <li>|</li>
+                <li>Sitemap</li>
+                <li>|</li>
+                <li>Blog</li>
+                <li>|</li>
+                <li>Client Testimonials </li>
+                <li>|</li>
+                <li>Inquiry Now</li>
+            </ul>
+        </div>
+        <div class="last-footer">
+            <div class="content1">
+                <img src="https://toim.b-cdn.net/images/tour-package/ftag.jpg" alt="">
+            </div>
+            <div class="content2">
+                <h1>Indian Holiday Pvt. Ltd.</h1>
+                <p>70, L.G.F, World Trade Centre</p>
+                   <p>Barakhamba Lane, New Delhi-110001 (INDIA)</p> 
+                   <p>Tel: +91 11 4242 310</p> 
+            </div>
+            <div class="content3">
+                <img src="https://toim.b-cdn.net/images/tour-package/ihpl-man.png" alt="">
+            </div>
+            <div class="content4">
+                <img src="https://toim.b-cdn.net/images/tour-package/member1.jpg" alt="">
+            </div>
+            <div class="content5">
+                <img src="https://toim.b-cdn.net/images/tour-package/payment.jpg" alt="">
+            </div>
+        </div>
+        <div class="last-line">
+            <p>Step out and travel with an ideal holiday planning done by our experts based on personalized experiences over guidebooks</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
